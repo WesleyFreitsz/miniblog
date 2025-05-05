@@ -1,0 +1,108 @@
+.dashboard {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em; /* Add horizontal padding */
+}
+
+.dashboard h2 {
+  font-size: 1.8em; /* Slightly smaller heading */
+  margin-bottom: 0.5em;
+}
+
+.dashboard p {
+  color: #aaa;
+  margin-bottom: 1em;
+}
+
+.noposts {
+  text-align: center;
+  margin-top: 2em; /* Add margin */
+}
+
+.noposts p {
+  margin-bottom: 1.5em;
+}
+
+.noposts a {
+  padding: 10px 25px;
+}
+
+/* Post list styles */
+.post_header,
+.post_row {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: space-between;
+  align-items: center;
+  /* width: 80%; */ /* Removed fixed width */
+  width: 100%; /* Use full width */
+  max-width: 800px; /* Add max-width for larger screens */
+  padding: 10px 0; /* Adjusted padding */
+  margin: 0 auto; /* Center the rows */
+}
+
+.post_header {
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 1em; /* Add margin below header */
+}
+
+.post_row {
+  border-bottom: 1px solid #eee;
+}
+
+.post_row p {
+  color: #000;
+  flex-basis: 50%; /* Give title some base width */
+  margin-bottom: 0.5em; /* Add margin for wrapped items */
+  text-align: left; /* Align title left */
+  padding-right: 10px; /* Add padding */
+  word-break: break-word; /* Prevent long titles from overflowing */
+}
+
+.actions {
+    display: flex;
+    flex-basis: 50%; /* Give actions some base width */
+    justify-content: flex-end; /* Align buttons to the right */
+    flex-wrap: wrap; /* Allow buttons to wrap */
+}
+
+.post_row button,
+.post_row a {
+  margin: 5px; /* Adjusted margin */
+  /* height: 30px; */ /* Removed fixed height */
+  /* width: 100px; */ /* Removed fixed width */
+  padding: 5px 10px; /* Adjust padding */
+  font-size: 0.8em; /* Adjusted font size */
+  min-width: 70px; /* Set min-width */
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .post_header {
+      display: none; /* Hide header on small screens, info is in rows */
+  }
+
+  .post_row p {
+      flex-basis: 100%; /* Title takes full width */
+      text-align: center; /* Center title */
+      margin-bottom: 1em;
+      padding-right: 0;
+  }
+
+  .actions {
+      flex-basis: 100%; /* Actions take full width */
+      justify-content: center; /* Center buttons */
+  }
+
+  .post_row button,
+  .post_row a {
+      font-size: 0.9em;
+      padding: 8px 15px;
+      min-width: 80px;
+  }
+}
+
