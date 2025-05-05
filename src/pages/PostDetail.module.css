@@ -1,0 +1,52 @@
+.post_detail {
+  margin-bottom: 2em;
+  padding: 0 1em; /* Add horizontal padding for smaller screens */
+}
+
+.post_detail img {
+  /* max-width: 600px; */ /* Removed fixed max-width */
+  max-width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below image */
+  margin: 1em auto; /* Center image and add vertical margin */
+}
+
+.post_detail h2 {
+  margin-bottom: 0.4em;
+  text-align: center; /* Center title */
+}
+
+.post_detail .tags {
+  margin-bottom: 1.2em;
+  display: flex;
+  flex-wrap: wrap; /* Allow tags to wrap */
+  justify-content: center; /* Center tags */
+}
+
+.tags p {
+  margin-right: 0.5em;
+  margin-bottom: 0.5em; /* Add bottom margin for wrapped tags */
+}
+
+.tags span {
+  font-weight: bold;
+}
+
+.createdby {
+  font-style: italic;
+  color: #444;
+  font-size: 0.8em;
+  margin-bottom: 1em;
+  text-align: center; /* Center createdby text */
+}
+
+/* Media Query for larger screens */
+@media only screen and (min-width: 768px) {
+  .post_detail {
+    padding: 0; /* Remove padding on larger screens */
+  }
+  .post_detail img {
+      max-width: 600px; /* Restore max-width for larger screens */
+  }
+}
+

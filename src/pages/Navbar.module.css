@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 10px 0px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em; /* Reduced horizontal padding for smaller screens initially */
+}
+
+.brand {
+  font-size: 1.2em;
+  margin-right: 1em; /* Add some space between brand and links */
+}
+
+.brand span {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.links_list {
+  display: flex;
+  flex-wrap: wrap; /* Allow links to wrap */
+  list-style: none;
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.links_list li {
+  margin-right: 0.5em; /* Reduced margin */
+  margin-bottom: 0.5em; /* Add bottom margin for wrapped items */
+}
+
+.links_list li:last-child {
+    margin-right: 0; /* Remove margin from last item */
+}
+
+.links_list li a {
+  padding: 0.4em 0.6em;
+  display: block; /* Ensure padding applies correctly */
+}
+
+.active {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Media Query for larger screens */
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 0.5em 2em; /* Restore original padding */
+    flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+  }
+  .links_list li {
+    margin-right: 1em; /* Restore original margin */
+    margin-bottom: 0; /* Remove bottom margin */
+  }
+}
+

@@ -1,0 +1,70 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1em; /* Add horizontal padding */
+}
+
+.search_form {
+  /* max-width: 100%; */ /* Remove */
+  /* width: 60%; */ /* Remove fixed percentage */
+  width: 100%; /* Use full width */
+  max-width: 600px; /* Add max-width for larger screens */
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.search_form input {
+  /* margin-right: 10px; */ /* Remove fixed margin */
+  /* width: 50%; */ /* Remove fixed percentage */
+  flex-grow: 1; /* Allow input to grow */
+  margin-bottom: 10px; /* Add margin for wrapped button */
+  min-width: 200px; /* Ensure input has a minimum width */
+}
+
+.search_form button {
+    margin-left: 10px; /* Add margin to the left of the button */
+}
+
+.noposts {
+  text-align: center;
+  margin-top: 2em; /* Add margin */
+}
+
+.noposts p {
+  margin-bottom: 1.5em;
+}
+
+.noposts a {
+  padding: 10px 25px;
+}
+
+/* Media query for the search form button alignment */
+@media only screen and (max-width: 400px) {
+    .search_form input {
+        margin-bottom: 10px;
+    }
+    .search_form button {
+        width: 100%;
+        margin-left: 0; /* Remove left margin */
+    }
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 600px) {
+    .search_form {
+        flex-wrap: nowrap; /* Prevent wrapping */
+    }
+    .search_form input {
+        margin-bottom: 0; /* Remove bottom margin */
+        margin-right: 10px; /* Restore right margin */
+    }
+    .search_form button {
+        width: auto; /* Restore auto width */
+        margin-left: 0; /* Remove left margin */
+    }
+}
+

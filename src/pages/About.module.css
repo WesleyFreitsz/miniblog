@@ -1,0 +1,21 @@
+.about {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1em; /* Add horizontal padding */
+}
+
+.about p {
+  color: #aaa;
+  margin-bottom: 2em;
+  max-width: 600px; /* Limit text width for readability */
+  width: 100%;
+}
+
+.about a {
+  display: inline-block; /* Change display */
+  margin-top: 15px;
+  padding: 10px 15px;
+}
+

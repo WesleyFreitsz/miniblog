@@ -1,0 +1,30 @@
+.edit_post {
+  text-align: center;
+  padding: 0 1em; /* Add horizontal padding */
+}
+
+.edit_post h2 {
+  font-size: 1.8em; /* Slightly smaller heading */
+}
+
+.edit_post p {
+  color: #aaa;
+  margin-bottom: 2em;
+}
+
+.edit_post .preview_title {
+  margin-bottom: 0.2em;
+  color: #000;
+  font-weight: bold;
+}
+
+.image_preview {
+  max-width: 100%;
+  max-height: 300px; /* Add max-height to prevent overly large previews */
+  object-fit: contain; /* Ensure image fits within bounds */
+  margin: 1em auto; /* Center image and add vertical margin */
+  display: block;
+}
+
+/* Adjust form width using global styles in index.css */
+
